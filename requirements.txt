@@ -1,0 +1,15 @@
+#AI LLM Orchestration
+google-genai>=0.2.0
+
+#API Communication & Environment Management
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+#Voice Synthesis (Edge TTS)
+edge-tts>=6.1.9
+
+#Image Processing & Fallback Generation
+Pillow>=10.0.0
+
+#Video Assembly Engine (Pinned for stability)
+moviepy==1.0.3

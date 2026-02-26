@@ -1,0 +1,12 @@
+.env
+client_secrets.json
+__pycache__/
+*.pyc
+venv/
+env/
+.venv/
+scene_*.jpg
+scene_*.mp4
+final_audio.mp3
+*.log
+zackd_style_short.mp4
