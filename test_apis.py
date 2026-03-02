@@ -8,12 +8,11 @@ load_dotenv()
 gemini_key = os.getenv("GEMINI_API_KEY")
 hf_token = os.getenv("HUGGINGFACE_TOKEN")
 
-print("--- Starting API Tests ---\n")
+print(" Starting API Tests \n")
 
-#2.Test Gemini API
 print("Testing Gemini API...")
 if not gemini_key:
-    print("❌ Error: GEMINI_API_KEY not found in .env file.")
+    print(" Error: GEMINI_API_KEY not found in .env file.")
 else:
     try:
         client = genai.Client()
@@ -22,13 +21,12 @@ else:
             model='gemini-2.5-flash',
             contents="Respond with exactly this text: Gemini is connected!"
         )
-        print(f" Success! Gemini says: {response.text.strip()}")
+        print(f" Success! Gemini: {response.text.strip()}")
     except Exception as e:
         print(f" Gemini Error: {e}")
 
 print("\n--------------------------\n")
 
-#3.Test Hugging Face API
 print("Testing Hugging Face API...")
 if not hf_token:
     print(" Error: HUGGINGFACE_TOKEN not found in .env file.")
@@ -49,4 +47,4 @@ else:
     except Exception as e:
         print(f" Hugging Face Request Error: {e}")
 
-print("\n--- Tests Complete ---")
+print("\n Tests Complete ")
