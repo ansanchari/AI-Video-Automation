@@ -11,18 +11,14 @@ def generate_image(prompt, output_filename="scene.jpg"):
     print(f"       Generating high-end cinematic 3D image via Hugging Face...")
     headers={"Authorization": f"Bearer {HF_TOKEN}"}
     
-    #keywords for high-end rendering engines and realistic lighting.
     style_prompt=f"hyper-realistic 3D render, Unreal Engine 5 cinematic, 8k textures, highly detailed, subsurface scattering, volumetric lighting, octane render, sharp focus, centered subject, {prompt}"
     
-    #removed 'cinematic' and 'depth of field' from the ban list to make it less flat.
     negative_prompt="cartoon, painting, drawing, grainy, low resolution, pixelated, ugly, messy background, out of focus, blurry, oversaturated, watermark, text"
     
-    #Send both prompts to the API
     payload={
         "inputs": style_prompt,
         "parameters": {
             "negative_prompt": negative_prompt,
-            #Boosting steps and guidance for maximum detail adherence
             "num_inference_steps": 35, 
             "guidance_scale": 8.0      
         }
