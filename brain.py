@@ -8,7 +8,7 @@ load_dotenv()
 client=genai.Client()
 
 def generate_viral_topic():
-    print("🧠 0. Brainstorming a brand new video topic...")
+    print(" 0. Brainstorming a brand new video topic...")
     
     brainstorm_prompt = """
     You are a viral YouTube Shorts producer for Zack D. Films. 
@@ -66,5 +66,5 @@ def generate_video_script(topic):
         clean_json = response.text.replace('```json', '').replace('```', '').strip()
         return json.loads(clean_json)
     except Exception as e:
-        print(f"❌ Error generating script: {e}")
+        print(f" Error generating script: {e}")
         raise e
