@@ -1,7 +1,7 @@
 # Autonomous AI Video Generation Agent
 **A Zero-Touch, Programmatic Pipeline for 3D Educational Shorts**
 
-This project is a fully automated, end-to-end agentic workflow designed to generate high-fidelity, 3D-style educational videos. Unlike static automation tools, this system uses a custom Python orchestration engine to manage every stage of production—from initial brainstorming to final video assembly without manual intervention.
+This project is a fully automated, end-to-end agentic workflow designed to generate high-fidelity, 3D-style educational videos. Unlike static automation tools, this system uses a custom Python orchestration engine to manage every stage of production, from initial brainstorming to final video assembly without manual intervention.
 
 ---
 
