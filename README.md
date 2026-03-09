@@ -13,10 +13,6 @@ This project is a fully automated, end-to-end agentic workflow designed to gener
 * **Dynamic Audio Synthesis:** Generates professional, documentary-style narration using Edge TTS.
 * **Programmatic Assembly:** Automatically synchronizes multi-modal assets into a 9:16 vertical MP4 format using MoviePy.
 
----
-
-##  Ingenuity & "Jugaad" (The Resourcefulness Factor)
-
 To ensure high-quality output using free-tier resources, the pipeline includes several custom engineering workarounds:
 
 * **The "Ken Burns" Resilience Layer:** Free-tier image-to-video APIs are often unstable. This pipeline includes a local fallback that automatically applies a dynamic 2.5D zoom/pan effect to static renders if an API timeout occurs, ensuring the video never crashes.
