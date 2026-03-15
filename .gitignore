@@ -5,8 +5,6 @@ __pycache__/
 venv/
 env/
 .venv/
-scene_*.jpg
-scene_*.mp4
-final_audio.mp3
+temp_scratch/
+final_exports/
 *.log
-zackd_style_short.mp4
